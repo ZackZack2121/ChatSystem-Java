@@ -23,7 +23,7 @@ public class Server implements Runnable{
                 serverSocket.receive(receivePacket);
                 msg = new String(receivePacket.getData(), 0, receivePacket.getLength());
 
-                System.out.println("Data received from client: " + msg);
+                System.out.println(msg);
             }
 
         } catch (IOException e) {
@@ -31,5 +31,11 @@ public class Server implements Runnable{
         }
 
 
+    }
+
+    public static void main(String args[]) {
+        Thread serverThread = new Thread(new Server());
+
+        serverThread.start();
     }
 }

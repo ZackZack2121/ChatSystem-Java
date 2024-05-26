@@ -20,6 +20,11 @@ public class Client implements Runnable{
 
     private DatagramPacket sendPacket;
 
+    private String userName;
+    public Client(String userName) {
+        this.userName = userName;
+    }
+
     @Override
     public void run() {
         try {
@@ -28,9 +33,10 @@ public class Client implements Runnable{
             inFromUser = new BufferedReader(new InputStreamReader(System.in));
 
             sendData = new byte[1024];
+
             while (true) {
-                System.out.println("Input: ");
-                msg = inFromUser.readLine();
+                System.out.print("Message: ");
+                msg = userName + ": " + inFromUser.readLine();
                 sendData = msg.getBytes();
 
                 sendPacket = new DatagramPacket(sendData, sendData.length, IPAddress, 5252);
@@ -42,5 +48,11 @@ public class Client implements Runnable{
         } finally {
             clientSocket.close();
         }
+    }
+
+    public static void main(String args[]) {
+       Thread clientThread = new Thread(new Client("Max"));
+
+       clientThread.start();
     }
 }
