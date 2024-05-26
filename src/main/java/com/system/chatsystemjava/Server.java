@@ -33,7 +33,7 @@ public class Server implements Runnable{
 
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Thread serverThread = new Thread(new Server());
 
         serverThread.start();

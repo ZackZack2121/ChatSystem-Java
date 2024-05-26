@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b159ca6-1613-4d04-a3e9-5f4855575e6f" name="Changes" comment="Added simple Peer-to-Peer basis, so the machine can act as server and client at once">
+    <list default="true" id="0b159ca6-1613-4d04-a3e9-5f4855575e6f" name="Changes" comment="Divided server and client into their own parts -&gt; makes it simpler to add multiple connections at once">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/system/chatsystemjava/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/system/chatsystemjava/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/system/chatsystemjava/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/system/chatsystemjava/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/system/chatsystemjava/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/system/chatsystemjava/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714499838926</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Divided server and client into their own parts -&gt; makes it simpler to add multiple connections at once">
+      <option name="closed" value="true" />
+      <created>1716752844881</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716752844881</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,6 +152,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added simple Peer-to-Peer basis, so the machine can act as server and client at once" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added simple Peer-to-Peer basis, so the machine can act as server and client at once" />
+    <MESSAGE value="Divided server and client into their own parts -&gt; makes it simpler to add multiple connections at once" />
+    <option name="LAST_COMMIT_MESSAGE" value="Divided server and client into their own parts -&gt; makes it simpler to add multiple connections at once" />
   </component>
 </project>
